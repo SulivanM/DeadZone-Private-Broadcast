@@ -2,7 +2,7 @@ const net = require('net');
 const server = net.createServer();
 const clients = new Map();
 const HEARTBEAT_INTERVAL = 120000;
-const HOST = '78.47.120.130';
+const HOST = '0.0.0.0';
 const PORTS = [2121, 2122, 2123];
 
 function broadcast(message, senderSocket = null) {
